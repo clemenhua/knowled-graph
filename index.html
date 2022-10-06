@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <link rel="stylesheet" href="themes/vue.css">
+
+</head>
+<body>
+  <div id="app">指南正在加载，请稍后...</div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      loadSidebar: true,
+      name: '知识图谱前端开发指南',
+      loadNavbar: true,
+      coverpage: true,
+      onlyCover:true,
+      subMaxLevel: 2,
+      repo: 'https://github.com/clemenhua',
+      notFoundPage: true,
+      themeColor: '#2c698d',
+      //搜索模块
+      search: 'auto', // 默认值
+    // 完整配置参数
+	search: {
+        maxAge: 86400000,//过期时间,单位毫秒,默认一天
+        paths: [], // or 'auto'
+        placeholder: '请输入搜索关键字',
+        noData: '没有搜到呦!',
+        depth:2,
+      //搜索模块
+    },
+    //字数统计
+    count:{
+    countable:true,
+    fontsize:'0.9em',
+    color:'rgb(90,90,90)',
+    language:'chinese'
+  }
+    //字数统计
+  }
+
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+</body>
+</html>
